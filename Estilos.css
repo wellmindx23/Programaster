@@ -85,7 +85,7 @@ nav{
 #radio1:checked ~ .tab1,
 #radio1:checked ~ .tab2,
 #radio1:checked ~ .tab3,{
-    opacity: 1;
+    opacity:1;
     visibility:visible;
     transform: scale(1);
 }
