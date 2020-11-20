@@ -14,6 +14,7 @@ header{
     width: 90%;
     height: 70px;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .logo{
@@ -59,17 +60,84 @@ nav{
     font-size: 18px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left:15px;
+    padding-left:7px;
+    padding-right: 8px;
     transition: all 400ms ease;
 }
 
 .ancho ul li a:hover{
     text-decoration: underline;
+    border-radius: 1em;
     cursor: pointer;
-    background: azure;
+    background: aquamarine;
 }
-.contenedor{
-    position: relative;
+
+.contenido{
+    width: 98%;
+    height: 525px;
+    margin: 0.5em auto;
+    border-radius: 1em;
+}
+
+.barra-proy{
+    position: absolute;
+    width: 80%;
+    background: midnightblue;
+    margin: 1em 6.4em;
+    height: 264px;
+    border-radius: 1em;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+.barra-proy img{
+    width: 150px;
+    border-radius: 1em;
+}
+
+.etiquetas{
+    position: absolute;
+    margin: 18.8em 6.4em;
+    width: 80%;
+    border-radius: 1em;
+    height: 225px;
+}
+
+.etiquetas{
+    display: inline-flex;
+}
+.E1{
+    width:30%;
+    padding-left: 20px;
+    height: 100%;
+    float: left;
+    border-radius: 1em;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.E2{
+    margin: 0 5.1em;
+    width:30%;
+    padding-left: 20px;
+    height: 100%;
+    border-radius: 1em;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.E3{
+    
+    width:30%;
+    padding-left: 20px;
+    height: 100%;
+    float: right;
+    border-radius: 1em;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+
+.footer{
+    width: 100%;
+    background: salmon;
+    height: 78px;
 }
 
 .contenedor div{
@@ -80,12 +148,4 @@ nav{
     transform: scale(0.90);
     padding: 30px;
     padding-bottom: 40px;
-}
-
-#radio1:checked ~ .tab1,
-#radio1:checked ~ .tab2,
-#radio1:checked ~ .tab3,{
-    opacity:1;
-    visibility:visible;
-    transform: scale(1);
 }
