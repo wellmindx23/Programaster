@@ -85,12 +85,68 @@ nav{
     margin: 1em 6.4em;
     height: 264px;
     border-radius: 1em;
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    background: url(img/Ej2.jpg)no-repeat center center/cover;
+    overflow: hidden;
+    box-shadow: 0 5px 10px;
 }
 
-.barra-proy img{
-    width: 150px;
+.imagenp{
+    position: relative;
     border-radius: 1em;
+    width: 150px;
+    height: 100px;
+}
+
+.nombrep{
+    text-align: center;
+    position: relative;
+    width: 50%;
+    font-size: 35px;
+    margin: .5em;
+    
+}
+
+.descripcionp{
+    position: relative;
+    width: 45%;
+    font-size: 18px;
+    height: auto;
+    margin: 2em 3.5em;
+    text-align: justify;
+
+}
+
+#btn-prev, #btn-next{
+    width: 40px;
+    height: 40px;
+    background: rgba( 255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#btn-prev:hover, #btn-next:hover{
+    background: rgba(255, 255, 255, 1);
+}
+
+#btn-prev{
+    left: 10px;
+}
+
+#btn-next{
+    right: 10px;
+}
+
+#slider{
+    display: flex;
+    width: 400%;
 }
 
 .etiquetas{
@@ -137,14 +193,4 @@ nav{
     width: 100%;
     background: salmon;
     height: 78px;
-}
-
-.contenedor div{
-    position: absolute;
-    line-height: 1.8;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.90);
-    padding: 30px;
-    padding-bottom: 40px;
 }
