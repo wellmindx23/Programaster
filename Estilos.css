@@ -4,97 +4,130 @@
     box-sizing: border-box;
 }
 
+/*Cuerpo*/
+
 body{
     font-family: 'Josefin Sans', sans-serif;
-
-
 }
 
+/*Contenedor cabecera*/
 header{
-    width: 100%;
-    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
-    height: 70px;
+    background: black;
+    width: 84%;
+    height: 55px;
+    margin: auto;
+
 }
 
 .ancho{
-    width: 90%;
-    height: 70px;
+    width: 100%;
+    height: 55px;
     margin: auto;
     padding-bottom: 10px;
+    box-shadow: 0 5px 5px 0;
 }
 
 .logo{
+    position: relative;
     width: 30%;
-    height: 70px;
-    float: left; 
-    padding-bottom: 5px; 
-    padding-top: 5px;
-}
-
-.logo img{
-    height: 50px;
-    border-radius: 20px;  
+    height: 55px;
+    float: left;
 }
 
 .logo p{
-    display: inline;
+    font-family: 'Sansita Swashed', cursive;
     font-size: 18px;
-    
-    color: gray;
-    margin-left: 5px;
-    
+    margin-left: 20px;
+    padding-top: 12px;
+    font-size: 28px;
+    color: white;
 }
 
-.logo img:hover{
-    cursor: pointer;
-}
-
+/*Etiquetas navegacion*/
 nav{
+    display: table;
     width: 70%;
-    height: 70px; 
+    height: 55px; 
     float: left;
     text-align: right;
-    padding-top: 38px;
+    color: white;
 }
 
-.ancho ul li{
-    display: inline;
-} 
 
-.ancho ul li a{
-    color: gray;
-    font-size: 18px;
-    text-decoration: none;
+nav ul li{
     
-    padding-left:7px;
-    padding-right: 8px;
-    transition: all 400ms ease;
+    float: right;
+    display: table-cell;
 }
 
-.ancho ul li a:hover{
-    text-decoration: underline;
-    border-radius: 1em;
-    cursor: pointer;
-    background: aquamarine;
+nav ul li a{
+    display: block;
+    line-height: 5px;   
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 19px;
+    color: white;
+    
 }
+
+/*Iconos de fondo*/
+nav ul li a span{
+    background: #CD6374;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position:absolute;
+    top:-48px;
+}
+
+nav ul li a span .icon{
+    display: block;
+    line-height: 55px;
+}
+
+/*Animacion iconos de fondo y colores*/
+nav ul li a:hover span{
+    top: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+nav ul li a .primero{background: #FFE389;}
+nav ul li a .segundo{ background: #CD6374;}
+nav ul li a .tercero{background: #519795;}
+
+/*Contenido barra navegacion proyectos y etiquetas*/
 
 .contenido{
-    width: 98%;
+    width: 96%;
     height: 525px;
     margin: 0.5em auto;
     border-radius: 1em;
+    margin-bottom: 3.5em;
 }
 
+/*Menu desplazable de proyectos*/
 .barra-proy{
     position: absolute;
     width: 80%;
     margin: 1em 6.4em;
-    height: 264px;
+    height: 280px;
     border-radius: 1em;
-    background: url(img/Ej2.jpg)no-repeat center center/cover;
+    background: black;
     overflow: hidden;
-    box-shadow: 0 5px 10px;
+    box-shadow: 0 5px 10px 0;
 }
+
+.imagen1{background: url("img/H1.jpg")no-repeat center center/cover;}
+.imagen2{background: url("img/H2.jpg")no-repeat center center/cover;}
+.imagen3{background: url("img/H3.jpg")no-repeat center center/cover;}
+.imagen4{background: url("img/Ej4.jpg")no-repeat center center/cover;}
 
 .imagenp{
     position: relative;
@@ -104,12 +137,12 @@ nav{
 }
 
 .nombrep{
+    font-family: 'Sansita Swashed', cursive;
     text-align: center;
     position: relative;
     width: 50%;
     font-size: 35px;
-    margin: .5em;
-    
+    color: white;
 }
 
 .descripcionp{
@@ -119,9 +152,11 @@ nav{
     height: auto;
     margin: 2em 3.5em;
     text-align: justify;
+    color: white;
 
 }
 
+/*Flechas y acciones*/
 #btn-prev, #btn-next{
     width: 40px;
     height: 40px;
@@ -155,9 +190,10 @@ nav{
     width: 400%;
 }
 
+/*Etiquetas de noticias, eventos, etc*/
 .etiquetas{
     position: absolute;
-    margin: 18.8em 6.4em;
+    margin: 20.4em 6.4em;
     width: 80%;
     border-radius: 1em;
     height: 225px;
@@ -194,9 +230,9 @@ nav{
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
-
+/*Pie de pagina */
 .footer{
     width: 100%;
     background: salmon;
-    height: 138px;
+    height: 50px;
 }
