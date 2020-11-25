@@ -72,6 +72,11 @@ nav ul li a{
     
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
 /*Iconos de fondo*/
 nav ul li a span{
     background: #CD6374;
