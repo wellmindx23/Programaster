@@ -241,8 +241,54 @@ nav ul li a .tercero{background: #519795;}
 }
 
 /*Pie de pagina */
-.footer{
-    width: 100%;
-    background: salmon;
-    height: 50px;
+.redes ul li{
+	list-style: none;
+	margin: 0 15px;
+}
+.redes ul{
+	position: absolute;
+	top:50%;
+	left:50%;
+	padding:0;
+	margin: 0;
+	transform: translate(-50%,-50%);
+	display: flex;
+	overflow: hidden;
+
+}
+.redes ul li .fa{
+	font-size: 30px;
+	line-height: 60px	;
+	transition: .6s;
+	color: #CD6374;
+}
+.redes ul li .fa:hover{
+	color: #ffffff;
+}
+.redes ul li a{
+	position: relative;
+	display: block;
+	height: 60px;
+	width: 60px;
+	border-radius: 50px;
+	background: #ffffff;
+	text-align: center;
+	transition: .6s;
+	box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
+}
+.redes ul li a:hover{
+	transform: translate(0px,5px);
+}
+
+.redes ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.redes ul li:nth-child(2) a:hover{
+	background-color: #55acee;
+}
+.redes ul li:nth-child(3) a:hover{
+	background-color: #e4405f;
+}
+.redes ul li:nth-child(4) a:hover{
+	background-color: #cd201f;
 }
