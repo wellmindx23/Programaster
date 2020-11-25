@@ -120,7 +120,7 @@ nav ul li a .tercero{background: #519795;}
 /*Menu desplazable de proyectos*/
 .barra-proy{
     position: absolute;
-    width: 80%;
+    width: 84%;
     margin: 1em 6.4em;
     height: 280px;
     border-radius: 1em;
@@ -209,7 +209,7 @@ nav ul li a .tercero{background: #519795;}
 .etiquetas{
     position: absolute;
     margin: 20.4em 6.4em;
-    width: 80%;
+    width: 84%;
     border-radius: 1em;
     height: 225px;
 }
