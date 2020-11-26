@@ -58,10 +58,10 @@ hr{
      color: white;
 }
 /*Para que se elimine el formulario de registro*/
-.container div .registroo form{
+.registroo{
     display: none;
+    opacity: 0;
 }
-
 
 /*Iniciar sesion-privilegiado*/
 .inicio-sesion{
