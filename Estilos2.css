@@ -42,6 +42,8 @@ body{
 }
 /*Boton registrar*/
 .registrar{
+    width: 100px;
+    height: 20px;
     margin: 10px;
     background: #519795;
     font-size: 18px;
