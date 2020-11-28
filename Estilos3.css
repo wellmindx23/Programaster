@@ -38,16 +38,22 @@ body{
 }
 
 .ingresar:hover{
+    color: black;
     transition: 0.5s ease-in;
 }
 /*Boton registrar*/
 .registrar{
-    margin: 10px;
+    padding: 50px;
+    margin: 10px auto;
     background: #519795;
     font-size: 18px;
     font-weight: 500!important;
     color: white;
-    transition: 0.5s ease-out;
+}
+
+.registrar:hover{
+    color: black;
+    transition: 0.5s ease-in;
 }
 
 hr{
