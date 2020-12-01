@@ -9,60 +9,32 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
-
-/*Contenedor cabecera*/
-header{
-    background: black;
-    width: 86%;
-    height: 55px;
-    margin: auto;
-    padding-bottom: 3%;
-
-}
-
-.ancho{ 
-    width: 100%;
-    height: 55px;
-    margin: auto;
-    padding-bottom: 10px;
-    box-shadow: 0 5px 5px 0;
-}
-
-.logo{
-    position: relative;
-    width: 30%;
-    height: 55px;
-    float: left;
-}
-
-.logo p{
+.gg{
     font-family: 'Sansita Swashed', cursive;
     font-size: 18px;
     margin-left: 20px;
-    padding-top: 12px;
+    padding-top: 2px;
     font-size: 28px;
     color: white;
 }
 
-/*Etiquetas navegacion*/
-nav{
-    display: table;
-    width: 70%;
-    height: 55px; 
-    float: left;
-    text-align: right;
+
+header{
+    width: 100%;
+    height: 57px;
     color: white;
+    background: black;
+    /*Para que el menu se quede pegado*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 0 10px 0;
 }
 
-nav ul li{
-    
-    float: right;
-    display: table-cell;
-}
-
-nav ul li a{
+nav  a{
     display: block;
-    line-height: 5px;   
+    line-height: 40px;   
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -71,30 +43,29 @@ nav ul li a{
     color: white;
     
 }
-nav ul li a:hover{
+nav a:hover{
     text-decoration: none;
     color: white;
 }
 
-/*Iconos de fondo*/
-nav ul li a span{
+nav a span{
     background: #CD6374;
     display: block;
     height: 100%;
     width: 100%;
     left: 0;
     position:absolute;
-    top:-48px;
+    top:-46px;
 }
 
-nav ul li a span .icon{
+nav a span .icon{
     display: block;
     line-height: 55px;
 }
 
 /*Animacion iconos de fondo y colores*/
-nav ul li a:hover span{
-    top: 0;
+nav a:hover span{
+    top: 5px;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -102,149 +73,118 @@ nav ul li a:hover span{
     transition: all .5s ease;
 }
 
-nav ul li a .primero{background: #FFE389;}
-nav ul li a .segundo{ background: #CD6374;}
-nav ul li a .tercero{background: #519795;}
+nav a .primero{background: #FFE389;}
+nav a .segundo{ background: #CD6374;}
+nav a .tercero{background: #519795;}
 
-/*Contenido barra navegacion proyectos y etiquetas*/
-
-.contenido{
-    
-    width: 90%;
-    height: 50%;
-    margin: .5% auto;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    padding-top: 3%;
-    padding-bottom: 40%;
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
 }
 
-/*Menu desplazable de proyectos*/
-.barra-proy{
+header .contenedor{
+    display: table;
+}
+
+/*MENU*/
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu{
     position: absolute;
-    width: 86%;
-    margin: -2% 2.2%;
-    height: 45%;
-    border-radius: 1em;
-    overflow: hidden;
-    box-shadow: 0 5px 10px 0;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
 }
 
-.imagen1{background: url("img/H1.jpg")no-repeat center center/cover; width:100%; height:100%;} 
-.imagen2{background: url("img/H2.jpg")no-repeat center center/cover; width:100%; height:100%;}
-.imagen3{background: url("img/H3.jpg")no-repeat center center/cover; width:100%; height:100%;}
-.imagen4{background: url("img/Ej4.jpg")no-repeat center center/cover; width:100%; height:100%;}
+.menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
 
-.barra-proy div section div  a{ text-decoration: none;}
-.barra-proy div section div  a:hover .nombrep{text-decoration: underline;}
+.menu a:hover{
+    background: rgba(255, 255, 255, .3);
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+/*Fin icono menu*/
+
+/*Barra de proyectos*/
+.cott{
+    margin-top: 100px;
+}
+
+.barra-proy{
+    position: relative;
+    background: black;
+    border-radius: 1em;
+    box-shadow: 0 5px 10px 0;
+    width: auto;
+    height: auto;
+}
 
 .imagenp {
-    display: flex;
-    width: 40%;
+    width: 30%;
     float: right;
-    height: 100%;
+    margin-top: 15px;
+    margin-right:35px;
+    height: 280px;
 }
 
 .imagenp img{
-    margin-top: 10%;
-    margin-left: 45px;
+    margin-top: 20px;
     margin-bottom: 20%;
     width: 300px;
-    height: 44%;
+    height: 200px;
     border-radius: 1em;
 }
 
 .nombrep{
+    padding-top: 40px;
     font-family: 'Sansita Swashed', cursive;
-    text-align: center;
-    position: relative;
     width: 50%;
     font-size: 35px;
     color: white;
-    height: 15%;
+    top: 50%;
 }
 
 .descripcionp{ 
-    position: relative;
-    width: 50%;
+    float: left;
+    width: 60%;
     font-size: 18px;
-    height: 40%;
-    margin: 2.5% 4.5%;
+    height: auto;
+    margin: 2.5% 0;
     text-align: justify;
     color: white;
-
 }
 
-/*Flechas y acciones*/
-#btn-prev, #btn-next{
-    width: 40px;
-    height: 40px;
-    background: rgba( 255, 255, 255, 0.5);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    line-height: 40px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 50%;
-    font-family: monospace;
-    cursor: pointer;
-}
-
-#btn-prev:hover, #btn-next:hover{
-    background: rgba(255, 255, 255, 1);
-}
-
-#btn-prev{
-    left: 10px;
-}
-
-#btn-next{
-    right: 10px;
-}
-
-#slider{
-    display: flex;
-    width: 400%;
-}
-
-/*Etiquetas de noticias, eventos, etc*/
-.etiquetas{
-    position: absolute;
-    margin: 23% 5%;
-    width: 80%;
-    border-radius: 1em;
-    height: 35%;
-}
-
-.etiquetas{
-    display: inline-flex;
-}
-.E1{
-    width:30%;
-    height: 100%;
-    float: left;
-    border-radius: 1em;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-}
-
-.E2{
-    margin: 0 5.1em;
-    width:30%;
-    height: 100%;
-    border-radius: 1em;
-    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-}
-
-.E3{
-    
-    width:30%;
-    height: 100%;
-    float: right;
-    border-radius: 1em;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-}
+.barra-proy section a{ text-decoration: none;}
+.barra-proy section a:hover .nombrep{text-decoration: underline;}
 
 
 /*Pie de pagina */
@@ -305,4 +245,73 @@ nav ul li a .tercero{background: #519795;}
 }
 .redes ul li:nth-child(4) a:hover{
 	background-color: #cd201f;
+}
+
+@media (min-width: 1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    .menu a {
+        border: none; 
+    }
+    .menu div a {
+        visibility: hidden;
+    }
+    
+    header label{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    nav a span{
+        visibility: hidden;
+        display: none;
+    }
+    nav a span .icon{
+       visibility: hidden;
+       display: none;
+    }
+    
+    nav a:hover span{
+        transform: translateX(0%);
+    }
+
+    .nombrep{     
+        font-family: 'Sansita Swashed', cursive;
+        width: 100%;
+        font-size: 32px;
+        color: white;
+        top: 50%;
+    }
+    
+    .descripcionp{ 
+        float: left;
+        width: 40%;
+        font-size: 12px;
+        height: auto;
+        margin: 2.5% 0;
+        text-align: justify;
+        color: white;
+    }
+    .imagenp {
+        width: 40%;
+        float: right;
+        margin-top: 85px;
+        margin-right:35px;
+        height: 100px;
+    }
+    
+    .imagenp img{
+        margin-bottom: 20%;
+        width: 150px;
+        height: 100px;
+        border-radius: 1em;
+    }
 }
