@@ -5,14 +5,6 @@ body{
     background-attachment: fixed;
 }
 
-/*Estilos para input de texto y contraseña/ no me sirvieron):*/
-.containter input[type="text"],
-.containter input[type="password"]{
-    border: none;
-    border-bottom: 1px solid #ffff;
-    background: transparent;  
-}
-
 /*Caja del formulario*/
 .formulario{
     position: relative;

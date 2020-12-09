@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo*/
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.gg{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 18px;
+    margin-left: 20px;
+    padding-top: 2px;
+    font-size: 28px;
+    color: white;
+}
+
+
+header{
+    width: 100%;
+    height: 57px;
+    color: white;
+    background: black;
+    /*Para que el menu se quede pegado*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 0 10px 0;
+    
+}
+
+nav  a{
+    display: block;
+    line-height: 40px;   
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 19px;
+    color: white;
+    
+}
+nav a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+nav a span{
+    background: #CD6374;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position:absolute;
+    top:-46px;
+}
+
+nav a span .icon{
+    display: block;
+    line-height: 55px;
+}
+
+/*Animacion iconos de fondo y colores*/
+nav a:hover span{
+    top: 5px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+nav a .primero{background: #FFE389;}
+nav a .segundo{ background: #CD6374;}
+nav a .tercero{background: #519795;}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+/*MENU*/
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.menu a:hover{
+    background: rgba(255, 255, 255, .3);
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+/*Fin icono menu*/
+
+.cont{
+    position: relative;
+    top: 75px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    height: auto;
+    margin-left: 10px;
+    display: flex;
+}
+
+.titulo h1{
+    font-size: 38px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.imagen{
+    float: right;
+    margin-top: 10px;
+    width: 40%;
+    height: 50%;
+}
+
+.imagen img{
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0 0 10px 0;
+}
+
+.descripcion{
+    margin: 10px;
+    width: 53%;
+    height: 50%;
+}
+
+.descripcion p{
+    text-align: justify;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.puntos{
+    margin-bottom: 80px;
+    float: left;
+    margin-left: 10px;
+    width: 53%;
+    height: 40%;
+}
+
+.T{
+    background: black;
+}
+
+.T h2{
+    font-family: 'Sansita Swashed', cursive;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.puntos ul li{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.conocelos{
+    float: right;
+    width: 40%;
+    height: 100%;
+    top: -200px;
+    position: relative;
+    margin-right: 46px;
+}
+
+.C h2{
+    padding: 10px;
+    background: black;
+    font-family: 'Sansita Swashed', cursive;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 39px;
+}
+
+.integrantes{
+    width: 100%;
+    height: auto;
+}
+
+.integrantes ol li{
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive;
+    margin-left: 16px;
+    padding: 1px;
+}
+
+
+/*Pie de pagina */
+.ola{
+    background-color: #519795;
+}
+#hola{
+    color: #519795;
+    font-size: 18px;
+}
+
+#hola h5{
+    font-size: 22px;
+}
+
+.redes ul li{
+	list-style: none;
+	margin: 0 25px;
+}
+.redes ul{
+	position: absolute;
+    top:50%;
+    left: 88%;
+	padding:0;
+	transform: translate(-50%,-50%);
+	display: flex;
+    overflow: hidden;     
+}
+
+.redes ul li .fa{
+	font-size: 30px;
+	line-height: 60px;
+	transition: .6s;
+	color: #4b8b89;
+}
+.redes ul li .fa:hover{
+	color: #ffffff;
+}
+.redes ul li a{
+	position: relative;
+	display: block;
+	height: 60px;
+	width: 60px;
+	border-radius: 50px;
+	background: #ffffff;
+	text-align: center;
+	transition: .6s;
+	box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
+}
+.redes ul li a:hover{
+	transform: translate(0px,5px);
+}
+
+.redes ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.redes ul li:nth-child(2) a:hover{
+	background-color: #55acee;
+}
+.redes ul li:nth-child(3) a:hover{
+	background-color: #e4405f;
+}
+.redes ul li:nth-child(4) a:hover{
+	background-color: #cd201f;
+}
+
+.con{
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.ult{
+    padding: 10px;
+}
+
+/*Boton registrar*/
+.registrar{
+    margin: 10px auto;
+    background: #519795;
+    font-size: 18px;
+    font-weight: 500!important;
+    color: white;
+}
+
+.registrar:hover{
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+@media (min-width: 1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    .menu a {
+        border: none; 
+    }
+    .menu div a {
+        visibility: hidden;
+    }
+    
+    header label{
+        display: none;
+    }
+
+    .imagg{
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 1023px){
+
+    
+    nav a span{
+        visibility: hidden;
+        display: none;
+    }
+    nav a span .icon{
+       visibility: hidden;
+       display: none;
+    }
+    
+    nav a:hover span{
+        transform: translateX(0%);
+    }
+
+    .nombrep{  
+        background:olive ;   
+        font-family: 'Sansita Swashed', cursive;
+        width: 100%;
+        font-size: 32px;
+        color: white;
+        top: 50%;
+    }
+    
+    .descripcion p{ 
+        background: aqua;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .imagen{
+       display: none;
+    }
+    
+    .imagenp img{
+        display: none;
+    }
+
+    .descripcion{
+        background:blueviolet ;
+        position: relative;
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagg{
+        background: chartreuse ;
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .imagg img{
+        background: darkcyan;
+        margin: 5px auto;
+        width: 300px;
+        height: 250px;
+        border-radius: 1em;
+    }
+
+    .puntos{
+        background: firebrick;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
+    }
+    .conocelos{
+        background: gold;
+        position: relative;
+        margin-top: 30%;
+     margin-left: auto;
+        margin-right: 50%;
+        margin-bottom: 20px;
+        }
+
+    .C h2{
+        background: black;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .integrantes{
+        background: rgba(0, 0, 0, .09);
+        border-radius: 2px;
+    }
+
+    .lista{
+        background: rgba(0, 0, 0, .09);
+        border-radius: 2px;
+        margin-bottom: 25px;
+    }
+
+    .redes ul{
+        top:50%;
+        padding:0;
+	    transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+
+    .con{
+        left: -10px;
+    }
+
+    .foot{
+        position: relative;
+        height: 390px;
+    }
+
+    .ult{
+        margin-top: 320px;
+    }
+
+}
+
+
+@media (max-width: 800px){
+
+    
+    nav a span{
+        visibility: hidden;
+        display: none;
+    }
+    nav a span .icon{
+       visibility: hidden;
+       display: none;
+    }
+    
+    nav a:hover span{
+        transform: translateX(0%);
+    }
+
+    .nombrep{  
+         
+        font-family: 'Sansita Swashed', cursive;
+        width: 100%;
+        font-size: 32px;
+        color: white;
+        top: 50%;
+    }
+    
+    .descripcion p{ 
+        
+        font-size: 20px;
+        text-align: justify;
+    }
+    .imagen{
+       display: none;
+    }
+    
+    .imagenp img{
+        display: none;
+    }
+
+    .descripcion{
+    
+        position: relative;
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagg{
+    
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .imagg img{
+    
+        margin: 5px auto;
+        width: 300px;
+        height: 250px;
+        border-radius: 1em;
+    }
+
+    .puntos{
+    
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
+    }
+    .conocelos{
+    
+        position: relative;
+        margin-top: 30%;
+     margin-left: auto;
+        margin-right: 50%;
+        margin-bottom: 20px;
+        }
+  
+
+    .C h2{
+        background: black;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .integrantes{
+        background: rgba(0, 0, 0, .09);
+        border-radius: 2px;
+    }
+
+    .lista{
+        background: rgba(0, 0, 0, .09);
+        border-radius: 2px;
+        margin-bottom: 25px;
+    }
+
+    .opa{
+        margin-top: 265px;
+    }
+    footer{
+        
+        height: 100%;
+    }
+    
+
+    .con{
+        
+        position: absolute;
+        width: 100%;
+        margin: 0px auto;
+
+    }
+    .cosas{
+        
+        margin: auto;
+        margin-bottom: 0;
+        margin-top: 65%;
+    }
+    
+    .redes ul{
+        top:50%;
+        padding:0;
+        left: 500%;
+	    transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+
+}
+

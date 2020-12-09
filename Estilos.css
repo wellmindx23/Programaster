@@ -269,7 +269,7 @@ header label{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1023px){
     nav a span{
         visibility: hidden;
         display: none;
