@@ -132,104 +132,172 @@ header label{
 }
 /*Fin icono menu*/
 
-.agradecimiento img{
-    width: 200px;
-    margin: 10px auto;
-    box-shadow: 0 0 10px 0;
-    border-radius: 10px;
+body{
+    background-image: url(img/Fondois.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.formulario{
-    background: #FFE389;
-    border-radius: 5px;
-    box-shadow: 0 0 10px 0;
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.formulario div h1{
-    font-size: 40px;
-    font-weight: bolder; 
+.contenedor-todo{
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    position: relative;
 }
 
-.formulario div hr{
-    background: black;
-    height: 3px;
+.caja-trasera{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .095);
 }
 
-.uch{
-    margin-left: 15%;
+.caja-trasera div{
+    margin: 100px 50px;
+    transition: all 500ms;
 }
 
-.uch label{
-    font-family: 'Sansita Swashed', cursive;
+.caja-trasera div p,
+.caja-trasera div button{
+    margin-top: 30px;
 }
 
-/*Pie de pagina */
-.content{
-    
-    width: 60%;
-    margin: 0 auto;
-   
+.caja-trasera div h3{
+    font-weight: 500;
+    font-size: 32px;
 }
 
-.ola{
-    background-color: #519795;
-}
-#hola{
-    color: #519795;
-}
-
-.redes ul li{
-	list-style: none;
-	margin: 0 15px;
-}
-.redes ul{
-	position: absolute;
-	top:50%;
-	left:50%;
-	padding:0;
-	margin: 0;
-	transform: translate(-50%,-50%);
-	display: flex;
-	overflow: hidden;
-
-}
-.redes ul li .fa{
-	font-size: 30px;
-	line-height: 60px	;
-	transition: .6s;
-	color: #4b8b89;
-}
-.redes ul li .fa:hover{
-	color: #ffffff;
-}
-.redes ul li a{
-	position: relative;
-	display: block;
-	height: 60px;
-	width: 60px;
-	border-radius: 50px;
-	background: #ffffff;
-	text-align: center;
-	transition: .6s;
-	box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
-}
-.redes ul li a:hover{
-	transform: translate(0px,5px);
+.caja-trasera button{
+    border: 2px solid #ffff;
+    background: transparent;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 500!important;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
 }
 
-.redes ul li:nth-child(1) a:hover{
-	background-color: #3b5999;
-}
-.redes ul li:nth-child(2) a:hover{
-	background-color: #55acee;
-}
-.redes ul li:nth-child(3) a:hover{
-	background-color: #e4405f;
-}
-.redes ul li:nth-child(4) a:hover{
-	background-color: #cd201f;
+.caja-trasera button:hover{
+    color:black;
+    background: #519795;
 }
 
+/*Formulario y nota*/
+
+.contenedor-nota-registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 430px;
+    position: relative;
+    top: -220px;
+    left: 48px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor-nota-registro form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor-nota-registro .notaa{
+    width: 100%;
+    padding: 100px 40px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+    left: 50px;
+}
+
+.contenedor-nota-registro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedor-nota-registro form input,
+.contenedor-nota-registro form textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding:10px;
+    border:none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor-nota-registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #519795;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario-registro{
+    opacity: 1;
+    display: block;
+}
+
+.notaa{
+    display: none;
+}
+
+/*Resposive*/
+
+@media screen and (max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+
+    .caja-trasera{
+        max-width:400px;
+        height:300px;
+        flex-direction:column;
+        margin:auto;
+    }
+
+    .caja-trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    .contenedor-nota-registro{
+        top:-10px;
+        left:-5px;
+        margin:auto;
+    }
+
+    .contenedor-nota-registro form
+    {
+        position: relative;
+    }
+
+    .contenedor-nota-registro .notaa{
+        position: relative;
+        left: 0;
+        padding: 40px 40px;
+    }
+}
 
 @media (min-width: 1024px){
     .menu{
