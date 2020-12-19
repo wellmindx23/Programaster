@@ -16,7 +16,10 @@ body{
     font-size: 28px;
     color: white;
 }
-
+/*alto*/
+.alto{
+    margin-top: 40px;
+}
 
 header{
     width: 100%;
