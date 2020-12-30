@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,16 +7,13 @@
 }
 
 body{
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #a0aeda;
-background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23002531' fill-opacity='0.26'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+
 }
 /*prueba*/
 
 
-.fils{
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-} 
+
 /**/
 .gg a{
     text-decoration: none;
@@ -34,7 +33,7 @@ header{
     width: 100%;
     height: 57px;
     color: white;
-    background: black;
+    background:  rgb(56, 56, 56);
     /*Para que el menu se quede pegado*/
     position: fixed;
     top: 0;
@@ -118,7 +117,7 @@ header label{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, .9);
+    background:  rgb(56, 56, 56);
     transition: all 0.5s;
     transform: translateX(-100%);
 }
@@ -143,62 +142,294 @@ header label{
 #menu-bar:checked ~ .menu {
     transform: translateX(0%);
 }
+.trl{
+    position: fixed;
+   left: 50px;
+   font-size: 4em;
+   top: 50%;
+}
 /*Fin icono menu*/
-
-/*Pie de pagina */
-.content{
-    
-    width: 60%;
-    margin: 0 auto;
-   
-}
-
-.ola{
-    background-color: #519795;
-}
-#hola{
-    color: #519795;
-}
-
-.redes ul li{
-	list-style: none;
-	margin: 0 15px;
-}
-.redes ul{
-	position: absolute;
-	top:50%;
-	left:50%;
-	padding:0;
-	margin: 0;
-	transform: translate(-50%,-50%);
-	display: flex;
-	overflow: hidden;
-
+.found{
+    background-color:#be3f52;
 }
 .redes ul li .fa{
 	font-size: 30px;
 	line-height: 60px	;
 	transition: .6s;
-	color: #4b8b89;
+	color:#000000b0;
 }
 .redes ul li .fa:hover{
 	color: #ffffff;
 }
 .redes ul li a{
-	position: relative;
+	
 	display: block;
 	height: 60px;
 	width: 60px;
 	border-radius: 50px;
 	background: #ffffff;
 	text-align: center;
-	transition: .6s;
-	box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
+    transition: .6s;
+    box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
+
+}
+.redes ul li{
+    list-style: none;
+    margin: 10px 13px;
+	
+}
+.redes ul{
+    position: relative;
+	
+	padding:0;
+	margin: 0;
+	
+	
+
 }
 .redes ul li a:hover{
-	transform: translate(0px,5px);
+	transform: translate(5px,-5px);
+}
+/*footer*/
+.conte1{
+    justify-content: center;
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    color: #ffffff;
+    padding: 50px;
+}
+.de{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+.ele1{
+width: 600px;
+margin: 0 6%;
+}
+.ele2{
+width: 600px;
+margin: 0 6%;
+}
+.pensa{
+    display: flex;
+}
+.hhhhr{
+    text-align: justify;
+}
+@media screen and (max-width:1150px){
+    .conte1{
+        display: grid;
+        padding: 12px 0;
+        
+    }
+    .ele1{
+        width: 300px;
+        margin: 0;
+    }
+    .ele1 h3{
+        text-align: center;
+    }
+    .de{
+        display: block;
+        margin: auto;
+    }
+    .ele2{
+        width: 300px;
+        margin: 0;
+    }
+    .pensa{
+        display: grid;
+    }
+    .hhhhr{
+        margin-top: 10px;
+        text-align: justify;
+    }
+}
+/*tarjetas*/
+.total{
+    margin-left: 250px;
+    font-family: 'Langar', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 30px;
+  
+    
+
 }
 
+.container6{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.container6 .cardis{
+    position: relative;
+    height: 250px;
+    background-color: #ffffff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+.container6 .cardis .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(56, 56, 56);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.container6 .cardis:hover .img-box{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+}
+.container6 .cardis:hover .v1{
+    background-color: #0b5820;
+
+}
+.container6 .cardis:hover .v2{
+    background-color: #cf2860;
+
+}
+.container6 .cardis:hover .v3{
+    background-color: rgb(134, 30, 148);
+}
+.container6 .cardis:hover .v4{
+    background-color:  rgb(214, 236, 12) ;
+}
+.container6 .cardis .img-box:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 700;
+}
+.container6 .cardis:hover .img-box:before{
+    content:none;
+}
+
+
+.container6 .cardis .img-box img{
+    margin-top: 50px;
+    max-width: 150px;
+    transition: 0.5s ease-in-out;
+}
+.container6 .cardis:hover .img-box img{
+    margin-top: 0;
+    max-width: 75px;
+  
+}
+.container6 .cardis .contunt{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container6 .cardis .contunt h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.container6 .cardis .contunt a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px  10px;
+    background-color: #333;
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width: 992px){
+    .container6{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container6 .cardis{
+        width: 400px;
+    }
+}
+@media (max-width: 768px){
+    .container6 .cardis{
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+    .container6 .cardis .img-box{
+        position: relative;
+    }
+    .container6 .cardis .img-box,
+    .container6 .cardis:hover .img-box{
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+    .container6 .cardis .img-box img,
+    .container6 .cardis:hover .img-box img{
+        max-width: 100px;
+    }
+    .container6 .cardis .contunt{
+        position: relative;
+        width: 100%;
+    }
+    .container6 .cardis .img-box:before{
+        font-size: 2em;
+    }
+    .container6 .cardis:hover .img-box:before{
+        content: attr(data-text);
+    }
+}
+
+@media (max-width:696px){
+    .total{
+        margin-left: 0;
+    }
+    .trl{
+       display: none;
+    }
+}
+/**/
+/*Boton registrar*/
+.registrar{
+    margin: 10px auto;
+    background: #519795;
+    font-size: 18px;
+    font-weight: 500!important;
+    color: black;
+}
+
+.registrar:hover{
+    color: rgb(37, 37, 37);
+    transition: 0.5s ease-in;
+}
+
+.fut img{
+    width: 200px;
+    border-radius: 5px;
+}
 .redes ul li:nth-child(1) a:hover{
 	background-color: #3b5999;
 }
@@ -211,24 +442,7 @@ header label{
 .redes ul li:nth-child(4) a:hover{
 	background-color: #cd201f;
 }
-/*Boton registrar*/
-.registrar{
-    margin: 10px auto;
-    background: #519795;
-    font-size: 18px;
-    font-weight: 500!important;
-    color: white;
-}
 
-.registrar:hover{
-    color: black;
-    transition: 0.5s ease-in;
-}
-
-.fut img{
-    width: 200px;
-    border-radius: 5px;
-}
 
 @media (min-width: 1024px){
     .menu{

@@ -22,7 +22,7 @@ header{
     width: 100%;
     height: 57px;
     color: white;
-    background: black;
+    background:  rgb(56, 56, 56);
     /*Para que el menu se quede pegado*/
     position: fixed;
     top: 0;
@@ -106,7 +106,7 @@ header label{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, .9);
+    background:  rgb(56, 56, 56);
     transition: all 0.5s;
     transform: translateX(-100%);
 }
@@ -133,10 +133,7 @@ header label{
 }
 /*Fin icono menu*/
 .cdre{
-   
-    opacity: 0.8;
-    background-image:  linear-gradient(#606a6a 1.5px, transparent 1.5px), linear-gradient(to right, #606a6a 1.5px, #9dc8dd 1.5px);
-    background-size: 58px 58px;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);    
 }
 .foundr{
     margin-top: 20px;
@@ -155,7 +152,7 @@ header label{
 }
 .nombre-p{
     font-family: 'Sansita Swashed', cursive;
-    background-color:  rgb(40, 100, 134);
+    background-color:  #519795;
     color: #ffffff;
 }
 
@@ -172,13 +169,11 @@ header label{
 
 .pk{
     margin-top: 0;
-    background: rgb(40, 100, 134);
+    background: #519795;
     color: white;
     margin-bottom: 0;
 }
-.lisae{
-    
-}
+
 section article ul li{
     margin-left: 15px;
 }
@@ -194,7 +189,7 @@ section article ul li p{
 
 .conocelos{
     margin-top: 0;
-    background: rgb(40, 100, 134);
+    background: #519795;
     margin-bottom: 0;
     
    
@@ -217,59 +212,93 @@ section aside ul{
 }
 
 /*Pie de pagina */
-.content{
-    
-    width: 60%;
-    margin: 0 auto;
-   
-}
-
-.ola{
-    background-color: #519795;
-}
-#hola{
-    color: #519795;
-}
-
-.redes ul li{
-	list-style: none;
-	margin: 0 15px;
-}
-.redes ul{
-	position: absolute;
-	top:50%;
-	left:50%;
-	padding:0;
-	margin: 0;
-	transform: translate(-50%,-50%);
-	display: flex;
-	overflow: hidden;
-
+.found{
+    background-color:#519795;
 }
 .redes ul li .fa{
 	font-size: 30px;
 	line-height: 60px	;
 	transition: .6s;
-	color: #4b8b89;
+	color:#000000b0;
 }
 .redes ul li .fa:hover{
 	color: #ffffff;
 }
 .redes ul li a{
-	position: relative;
+	
 	display: block;
 	height: 60px;
 	width: 60px;
 	border-radius: 50px;
 	background: #ffffff;
 	text-align: center;
-	transition: .6s;
-	box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
+    transition: .6s;
+    box-shadow: 0px 8px 10px rgba(107, 106, 106, 0.5);
+
+}
+.redes ul li{
+    list-style: none;
+    margin: 10px 13px;
+	
+}
+.redes ul{
+    position: relative;
+	
+	padding:0;
+	margin: 0;
+	
+	
+
 }
 .redes ul li a:hover{
-	transform: translate(0px,5px);
+	transform: translate(5px,-5px);
+}
+/*footer*/
+.conte1{
+    justify-content: center;
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    color: #ffffff;
+    padding: 50px;
+}
+.de{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+.ele1{
+width: 600px;
+margin: 0 6%;
+}
+.ele2{
+width: 600px;
+margin: 0 6%;
+}
+.pensa{
+    display: flex;
+}
+.hhhhr{
+    text-align: justify;
+}
+/*Boton registrar*/
+.registrar{
+    margin: 10px auto;
+    background: #519795;
+    font-size: 18px;
+    font-weight: 500!important;
+    color: black;
 }
 
+.registrar:hover{
+    color: rgb(37, 37, 37);
+    transition: 0.5s ease-in;
+}
+
+.fut img{
+    width: 200px;
+    border-radius: 5px;
+}
 .redes ul li:nth-child(1) a:hover{
 	background-color: #3b5999;
 }
@@ -283,19 +312,37 @@ section aside ul{
 	background-color: #cd201f;
 }
 
-/*Boton registrar*/
-.registrar{
-    margin: 10px auto;
-    background: #519795;
-    font-size: 18px;
-    font-weight: 500!important;
-    color: white;
+@media screen and (max-width:1150px){
+    .conte1{
+        display: grid;
+        padding: 12px 0;
+        
+    }
+    .ele1{
+        width: 300px;
+        margin: 0;
+    }
+    .ele1 h3{
+        text-align: center;
+    }
+    .de{
+        display: block;
+        margin: auto;
+    }
+    .ele2{
+        width: 300px;
+        margin: 0;
+    }
+    .pensa{
+        display: grid;
+    }
+    .hhhhr{
+        margin-top: 10px;
+        text-align: justify;
+    }
 }
 
-.registrar:hover{
-    color: black;
-    transition: 0.5s ease-in;
-}
+
 
 @media (min-width: 1024px){
     .menu{

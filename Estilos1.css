@@ -22,7 +22,7 @@ header{
     width: 100%;
     height: 57px;
     color: white;
-    background: black;
+    background:  rgb(56, 56, 56);
     /*Para que el menu se quede pegado*/
     position: fixed;
     top: 0;
@@ -106,7 +106,7 @@ header label{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, .9);
+    background:  rgb(56, 56, 56);
     transition: all 0.5s;
     transform: translateX(-100%);
 }
@@ -207,6 +207,7 @@ section{
     background-color: rgb(75, 67, 67);
        height: 600px;
        overflow: auto;
+       color: rgb(209, 209, 209);
    }
    .dfd{
     background-color: rgba(0, 0, 0, 0);
@@ -219,18 +220,22 @@ section{
        overflow: auto;
    }
    .psdf3{
-    background-color: rgb(43, 105, 124);
+    background-color: rgb(101, 172, 101);
        height: 600px;
        overflow: auto;
+   }
+   .psdf4{
+       background-color: rgb(106, 172, 226);
    }
    .kul{
        width: 80%;
        margin: auto;
+       line-height: 30px;
 
 
    }
 .hsa{
-    margin-left: 3px;
+   list-style: none;
 }
 
 
@@ -283,6 +288,9 @@ section{
 }
 
 /**/
+.xde{
+    list-style: none;
+}
 .btrn {
     position: relative;
    }
@@ -305,7 +313,7 @@ section{
    }
    .btrn {
     background-color:rgb(56, 56, 56);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 340px;
     height: 300px;
    margin: 40px 0;
@@ -338,7 +346,32 @@ section{
     width: 70%;
     height: 200px;
 }
+/**/
+.boton34{
+    padding: 6px 10px;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    transition: .6s;
+}
+.pola{
+    background-color: rgb(204, 111, 58);
+}
+.pola1{
+    background-color: rgb(61, 130, 177);
+}
+.pola3{
+    background-color:rgb(156, 70, 70);
+}
+.boton34:hover{
+    transform: translate(0px,-5px);
 
+}
+.boton34 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight:500!
+}
+/******/
    .btrn:hover {
       
       cursor: pointer;

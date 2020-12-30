@@ -134,7 +134,7 @@ header label{
 /*Fin icono menu*/
 
 body{
-    background-image: url(img/Fondois.jpg);
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,6 +177,9 @@ main{
 .caja-trasera div h3{
     font-weight: 500;
     font-size: 32px;
+}
+.lapera{
+    font-size: 16px;
 }
 
 .caja-trasera button{
